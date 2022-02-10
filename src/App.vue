@@ -1,17 +1,26 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <main-layout/>
   </div>
-  <router-view/>
 </template>
+
+<script>
+import MainLayout from '@/layouts/MainLayout.vue'
+
+export default {
+  name: 'app',
+  components: { MainLayout }
+}
+</script>
 
 <style lang="stylus">
 #app
-  font-family Avenir, Helvetica, Arial, sans-serif
+  font-family sans-serif, Helvetica, Avenir, Arial
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-  text-align center
+  font-size 1.125rem
   color #2c3e50
-  margin-top 60px
+  margin 0
+  padding 0
+
 </style>
