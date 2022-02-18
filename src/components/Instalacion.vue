@@ -40,7 +40,7 @@
           </div>
         </div>
         <h3>Los pasos de instalación son los sigientes:</h3>
-        <ul>
+        <ul class="steps">
           <li class="l-1">
             Paso 1.<br />
             Con la cinta métrica mide desde el suelo hasta la altura que desees
@@ -104,18 +104,14 @@ export default {
   background-image url("../assets/img/Instalacion.png")
   background-size cover
   border-style outset
+  width 100%
   max-width 600px
   padding 0
-
-.l-1
-  background linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%)
-  color white
-
-.l-2
-  background linear-gradient(to left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%)
+  justify-self center
 
 .instalation div ul
   background linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%)
+  box-shadow 3px 5px 7px $text-color
   color white
   padding 5px 5px
   margin 0

@@ -305,6 +305,7 @@ export default {
 <style scoped lang="stylus">
 .img-collage img
   border-style outset
+  box-shadow: 3px 3px 6px gray
   width 100%
   max-width 500px
   margin 10px

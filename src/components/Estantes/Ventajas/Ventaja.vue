@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ventajas">
     <h2>{{ this.estanteVentaja.title }}</h2>
     <p>{{ this.estanteVentaja.body }}</p>
 

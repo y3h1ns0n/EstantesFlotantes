@@ -25,12 +25,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.nav
-  display flex
-  flex-direction column
-  text-align center
-  margin 10px 20px
-  width 200px
 
 .nav a
   border solid 1px gray
@@ -40,8 +34,7 @@ export default {
 
 .nav a:hover
   border solid 1px black
-  background-color rgba(255, 262, 255, 0.9)
-  color black
+  opacity 1.2
   transform scale(1.02)
 
 </style>

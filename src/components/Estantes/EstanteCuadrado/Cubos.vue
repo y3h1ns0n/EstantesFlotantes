@@ -13,6 +13,8 @@
         En ESTANTESFLOTANTES te contamos todo lo relacionado con este tipo de repisa en forma de cubo para que tengas la información clara y tomes la mejor decisión al momento de comprar.
       </p>
 
+      <div class="sprite"></div>
+
       <h2>A tener en cuenta antes de comprar repisas flotantes en forma de cubo.</h2>
       <p class="list">
         ▪️ Antes de comprar es importante que  tengas claro, el tipo de uso que le vas a dar a esta repisa, puesto que hay gran variedad de estilos que van desde decorativos, hasta algunos que son más funcionales.
@@ -29,35 +31,8 @@
       <p class="list">
         ▪️ Elegir el tipo de material que sea acorde al uso que le quieres dar, recuerda que hay materiales que son sensibles a la intemperie y ambientes con mucha humedad.
       </p>
+      <material />
 
-      <h2>¿De qué tipo de material son las repisas flotantes en forma de cubo?</h2>
-      <p>
-        Estas repisas son fabricadas en diferentes materiales, así que no te preocupes, pues estas se adaptan a la necesidad de uso que le quieras dar, podrás escoger la mejor opción que se adapte a tus necesidades y a tu hogar.  entre algunos de los materiales en que están fabricadas estas repisas están:
-      </p>
-      <p class="list">
-        <strong>▪️ METÁLICAS</strong>
-      </p>
-      <div class="material">
-        <img src="@/assets/img/Metal.jpg" alt="Material Metal">
-        <p>Presentan una mayor resistencia a golpes, y soportan un poco más de peso.</p>
-      </div>
-      <p class="list">
-        <strong>▪️ MADERA</strong>
-      </p>
-      <div class="material">
-      <img src="@/assets/img/Madera.jpg" alt="Material Madera">
-      <p>Son las más utilizadas por su presentación y variedad.</p>
-      </div>
-      <p class="list">
-        <strong>▪️ MDF</strong>
-      </p>
-      <div class="material">
-        <img src="@/assets/img/Mdf.jpg" alt="Material Mdf">
-        <p>Es un tipo de material derivado de la madera, por tal razón es más económico.</p>
-      </div>
-      <p>
-        Con esta variedad de materiales, ya puedes hacerte una idea de cual es el estante que quieres para tu casa.
-      </p>
       <mejores-cubos/>
 
       <h2>Te dejamos algunas recomendaciones para que disfrutes al máximo tu estante de pared en forma de cubo</h2>
@@ -82,10 +57,11 @@
 import MejoresCubos from './MejoresCubos.vue'
 import Ventajas from '../Ventajas/Ventaja.vue'
 import Instalacion from '@/components/Instalacion.vue'
+import Material from '../Materiales/Materiales.vue'
 export default {
   name: 'EstantesCubos',
 
-  components: { MejoresCubos, Ventajas, Instalacion },
+  components: { MejoresCubos, Ventajas, Instalacion, Material },
 
   data () {
     return {
@@ -124,6 +100,6 @@ export default {
 .sprite
   background-image url("../../../assets/img/Cubos.jpg")
   background-size 100%
-  height 150px
+  height 200px
   background-position 0% 0%
 </style>

@@ -49,6 +49,7 @@
       <p>
         Se recomienda hacer una instalación siguiendo las instrucciones de fábrica, utiliza todos los accesorios de soporte necesarios al momento de la instalación, así logrará que el estante de pared sea un mueble seguro al momento de poner tus objetos decorativos sobre ella, instala en el lugar adecuado evitando así accidentes como golpes, recuerda que la altura es muy importante para tener un 100% de acceso a ella.
       </p>
+      <div class="sprite"></div>
       <p>
         Los objetos colocados en el estante flotante, deberán quedar estables sobre su base para que no resbalen y caigan, evitar poner objetos circulares que puedan rodar sobre su superficie, no exceder la carga que soporta la repisa según recomendaciones del fabricante, no apoyarse ni sujetarse por ningún motivo de la misma. Al seguir estas y otras recomendaciones, evitará al máximo inconvenientes y aumentará la durabilidad de tu estante circular.
       </p>

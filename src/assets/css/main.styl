@@ -4,7 +4,7 @@ $background-app = #e0e0e0
 $background-content = #fcf8fa
 $background-material = rgba(44, 2, 25, 0.7)
 $border = #c2c2c2
-$gradiant-bottom = linear-gradient(to bottom, #42002d 0%, #72044f 100%)
+$gradiant-bottom = linear-gradient(to bottom, #42002d 30%, #72044f 100%)
 $gradiant-top = linear-gradient(to top, #42002d 0%, #72044f 100%)
 $green-color = #A5D846
 $principal-color = #42002d
@@ -22,15 +22,15 @@ $text-color = #192735
   padding 0
 
 .bot
-  width 100%
+  width 96%
   height 90%
   border-top-left-radius 500px
-  border-top solid 3px $text-color
-  border-left solid 3px $text-color
+  box-shadow -3px -3px 6px $border
 
 .bot-content
   display flex
   align-items flex-end
+  justify-content flex-end
   margin-top 20px
   background $gradiant-top
   border-top solid 3px $text-color
@@ -51,8 +51,23 @@ $text-color = #192735
   max-width 1200px
   line-height 1.5
 
+.content-product
+  display grid
+
 .content-header
   width 100%
+
+.content-material
+  display grid
+  width 100%
+
+.float
+  position fixed
+  right 20px
+  bottom 40px
+  width 200px
+  height 310px
+  border-radius 10px
 
 .footer-nav
   background $gradiant-bottom
@@ -63,10 +78,17 @@ $text-color = #192735
 
 .head
   height 90%
-  width 100%
+  width 96%
   border-bottom-right-radius 500px
-  border-bottom solid 3px $text-color
-  border-right solid 3px $text-color
+  box-shadow 3px 3px 6px $border
+
+.header-nav
+  background $gradiant-top
+  border-bottom 1px solid $border
+  display grid
+  grid-template-columns repeat(2, auto)
+  height 120px
+  width 100%
 
 .head-content
   display flex
@@ -89,6 +111,7 @@ $text-color = #192735
 
 .img-material
   border-style groove
+  box-shadow: 3px 3px 6px $text-color
   justify-self center
   margin 0
   max-width 640px
@@ -109,24 +132,38 @@ $text-color = #192735
   cursor pointer
   transform scale(1.05)
 
-.header-nav
-  background $gradiant-top
-  border-bottom 1px solid $border
+.instalation
   display grid
-  grid-template-columns repeat(2, auto)
-  height 120px
-  width 100%
 
 .logo
   height 100%
   
-.instalation
-  display grid
-
 .list
   margin 10px 0
   padding-left 20px
   text-indent -15px
+
+.l-1
+  background linear-gradient(to right, $principal-color 0%, $text-color 100%)
+  border-top solid 3px $text-color
+  border-left solid 3px $text-color
+  border-radius 0px 30px 30px 30px
+  box-shadow: 3px 6px 5px $text-color
+  color white
+  margin-bottom 20px
+  width 80%
+
+.l-2
+  background linear-gradient(to left, $principal-color 10%, $text-color 100%)
+  border-top solid 3px $text-color
+  border-right solid 3px $text-color
+  border-radius 30px 0px 30px 30px
+  box-shadow: 3px 5px 5px $text-color
+  color white
+  margin-bottom 20px
+  width 80%
+  align-self flex-end
+  text-align right
 
 .material
   align-items center
@@ -134,13 +171,13 @@ $text-color = #192735
   grid-template-columns repeat(2, 1fr)
   justify-self center
   margin-bottom 30px
-  justify-items center
+  justify-self center
   max-width 1200px
   width 100%
 
 .material img
-  border-top solid 1px $border
   border-top-left-radius 500px
+  box-shadow -5px -6px 7px $text-color
   grid-column 1/3
   grid-row 2/2
   justify-self center
@@ -162,6 +199,7 @@ $text-color = #192735
   background $gradiant-bottom
   border-radius 20px 0 0 20px
   border solid 1px $border
+  box-shadow -5px 6px 7px $text-color
   color white
   grid-column 2/3
   grid-row 2/2
@@ -182,12 +220,31 @@ $text-color = #192735
 
 .menu:hover
   background-color $principal-color
-  opacity 1
+  opacity 1.2
   transform scale(1.05)
+
+
+.menu
+  position absolute
+  background-color #400030
+  right 0
+  bottom 0
+
+.nav
+  box-shadow -8px -5px 7px $text-color
+  display flex
+  flex-direction column
+  text-align center
+  margin 10px 20px
+  position absolute
+  right 0
+  top -50px
+  width 200px
 
 .nav-primary
   align-self end
   background-color $principal-color
+  box-shadow -8px 5px 7px $text-color
   display none
   flex-direction column
   position absolute
@@ -209,13 +266,20 @@ $text-color = #192735
   background-color $red-color
   border 3px
   border-style groove
+  box-shadow 3px 3px 7px $text-color
   margin-top 20px
 
 .positive
   background-color $green-color
   border 3px
   border-style groove
+  box-shadow 3px 3px 7px $text-color
   margin-top 20px
+
+.product
+  justify-self center
+  max-width 800px
+  width 90%
 
 .p-1
   display grid
@@ -228,19 +292,30 @@ $text-color = #192735
   border-bottom-right-radius 200px 100px
   border-bottom solid 5px $text-color
   border-top-left-radius 200px 100px
+  box-shadow: 2px -3px 6px $text-color
   display flex
   justify-content flex-end
-  height 25px
+  height 15px
   margin-top 20px
   width 100%
+
+.steps
+  display flex
+  flex-direction column
+  width 100%
+  justify-self center
 
 .sub-content
   display grid
   margin 0 15px
 
+.ventajas
+  display grid
+
 .table
   display flex
   flex-direction column
+  justify-self center
   max-width 1000px
 
 .table th
@@ -273,6 +348,10 @@ p
     cursor pointer
 
 @media (min-width: 599px)
+  .material
+    max-width 800px
+    border-top solid 3px $text-color
+
   .float
     display none
 
@@ -313,3 +392,5 @@ p
     border none
     border-radius 0 20px 20px 20px
   
+  .steps
+    max-width 800px
