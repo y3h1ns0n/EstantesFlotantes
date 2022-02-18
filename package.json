@@ -83,5 +83,18 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [
+    "estantes",
+    "de",
+    "pared",
+    "vuejs3"
+  ],
+  "author": "yehinson salazar",
+  "license": "ISC"
 }
